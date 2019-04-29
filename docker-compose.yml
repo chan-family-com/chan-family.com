@@ -1,0 +1,14 @@
+version: '3'
+services:
+  chan-family.github.io:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: chan-family.github.io:latest
+    container_name: chan-family
+    hostname: chan-family
+    ports:
+      - '127.0.0.1:4000:4000'
+    volumes:
+      - .:/srv/jekyll
+    command: [ "jekyll", "serve", "--config", "_config_dev.yml,_config.yml", "--watch", "--force_polling" , "--drafts"]

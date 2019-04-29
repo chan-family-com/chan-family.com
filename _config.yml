@@ -1,0 +1,26 @@
+url: https://chan-family.github.io
+baseurl:
+
+# Site Settings
+title: chan-family.com
+description: "This is the chan-family website; it's just a holding page"
+google-tracking-id:
+
+# Career Settings
+# Default career thumbnail image.
+career-img: "img/timeline/default.jpg"
+
+exclude:
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - readme.markdown
+  - NOTICE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - Dockerfile
+  - clean.sh
